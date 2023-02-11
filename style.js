@@ -1,4 +1,5 @@
 
+//<!-- option-4 -->
 const makeBlueButton = document.getElementById('make-blue');
         makeBlueButton.onclick = makeBlue;
         function makeBlue (){

@@ -8,8 +8,10 @@
 </head>
 <body>
    <h1>Explore of event documentation</h1>
+
+   <!-- option-1 -->
    <button onclick="document.body.style.backgroundColor='pink'">Click Me</button>
-   <button onclick="">Another Button</button>
+   <button id="best-color">Another Button</button>
    <br> 
    <button onclick="makeYellow()">Make Yellow</button>
    <button onclick="makeGreen()">Make Green</button>
@@ -23,6 +25,7 @@
 
     <script src="style.js"></script>
     <script>
+        // <!-- option-2 -->
         function makeYellow(){
         document.body.style.backgroundColor='yellow';
         };
@@ -32,13 +35,16 @@
         function makeRed(){
         document.body.style.backgroundColor='red';
         };
+
+        // <!-- option-3, more uses option -->
         const makeOrangeButton = document.getElementById('make-orange').addEventListener('click', function(){
             document.body.style.backgroundColor ='orange';
-        })
-        
-        
+        });
 
-        
+        const makeBestColor = document.getElementById('best-color').addEventListener('click', function (){
+            document.body.style.backgroundColor = 'skyblue';
+        })
+       
     </script>
 </body>
 </html>
