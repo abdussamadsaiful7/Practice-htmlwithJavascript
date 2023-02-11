@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM File</title>
+</head>
+<body>
+   <h1>Explore of event documentation</h1>
+   <button onclick="document.body.style.backgroundColor='pink'">Click Me</button>
+   <button onclick="">Another Button</button>
+   <br> 
+   <button onclick="makeYellow()">Make Yellow</button>
+   <button onclick="makeGreen()">Make Green</button>
+   <button onclick ="makeRed()">Make Red</button>
+   <br>
+   <button id="make-blue">Process</button>
+
+    <script src="style.js"></script>
+    <script>
+        function makeYellow(){
+        document.body.style.backgroundColor='yellow';
+        };
+        function makeGreen(){
+        document.body.style.backgroundColor='green';
+        };
+        function makeRed(){
+        document.body.style.backgroundColor='red';
+        };
+
+        const makeBlueButton = document.getElementById('make-blue');
+        makeBlueButton.onclick = makeBlue;
+        function makeBlue (){
+            document.body.style.backgroundColor = 'blue';
+        }
+
+        
+    </script>
+</body>
+</html>
