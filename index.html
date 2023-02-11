@@ -18,6 +18,8 @@
    <button id="make-blue">Process</button>
    
    <button id="make-pink">Admit</button>
+   <button id="make-gray">Done!</button>
+   <button id="make-orange">Finish</button>
 
     <script src="style.js"></script>
     <script>
@@ -30,7 +32,9 @@
         function makeRed(){
         document.body.style.backgroundColor='red';
         };
-
+        const makeOrangeButton = document.getElementById('make-orange').addEventListener('click', function(){
+            document.body.style.backgroundColor ='orange';
+        })
         
         
 
